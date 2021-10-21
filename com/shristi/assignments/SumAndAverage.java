@@ -1,4 +1,4 @@
-package com.shristi.basic;
+package com.shristi.assignments;
 
 import java.util.Scanner;
 
