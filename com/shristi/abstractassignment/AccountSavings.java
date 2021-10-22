@@ -1,7 +1,6 @@
-package com.shristi.inheritanceassignment;
+package com.shristi.abstractassignment;
 
 public class AccountSavings extends Bank {
-
 	AccountSavings(double b) {
 		super(b);
 		// TODO Auto-generated constructor stub
@@ -15,6 +14,3 @@ public class AccountSavings extends Bank {
 		balance = balance + (amount + amount * 0.1);
 	} 
 }
-
-
-

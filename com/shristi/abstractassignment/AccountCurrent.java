@@ -1,7 +1,6 @@
-package com.shristi.inheritanceassignment;
+package com.shristi.abstractassignment;
 
-public class AccountCurrent extends Bank{
-
+public class AccountCurrent extends Bank {
 	AccountCurrent(double b) {
 		super(b);
 		// TODO Auto-generated constructor stub
