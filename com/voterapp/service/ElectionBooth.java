@@ -3,7 +3,7 @@ package com.voterapp.service;
 import com.voterapp.exception.*;
 
 public class ElectionBooth {
-	  String localities[] = {"Hyderabad","Chennai","bangalore"};
+	  String localities[] = {"Hyderabad","Chennai","Bangalore"};
 	  
 	  public Boolean checkAge(int age) throws UnderAgeException{
 		  if (age >= 18)  {
@@ -32,7 +32,7 @@ public class ElectionBooth {
 			  throw new NoVoterIdException("Your voter Id is invalid");
 		  }  
 	  }
-      public Boolean checkEligibility(int age, String locality, int voterId) throws NotEligibleException, UnderAgeException, NoVoterIdException, LocalityNotFoundException {
+      public Boolean checkEligibility(int age, String locality, int voterId) throws NotEligibleException {
     	 if (checkAge(age) && checkLocality(locality) && checkVoterId(voterId)) {
     		 System.out.println("You are Eligible to Vote");
     	 }
